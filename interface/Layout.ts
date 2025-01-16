@@ -1,8 +1,8 @@
-import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import { BottomTabNavigationConfig, BottomTabScreenProps } from "@react-navigation/bottom-tabs/lib/typescript/commonjs/src/types";
-import { CompositeScreenProps, createNavigationContainerRef } from "@react-navigation/native";
+import {
+  CompositeScreenProps,
+  createNavigationContainerRef,
+} from "@react-navigation/native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-
 
 export type RootStackParamList = {
   OnboardingScreen: undefined;

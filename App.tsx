@@ -1,5 +1,5 @@
 import "react-native-gesture-handler";
-import "../globals.css";
+import "./globals.css";
 import {
   NavigationContainer,
   NavigationIndependentTree,
@@ -20,17 +20,17 @@ import { Image } from "react-native";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { createStackNavigator } from "@react-navigation/stack";
-import OnboardingScreen from "./screens/OnboardingScreen";
+import OnboardingScreen from "@/app/screens/OnboardingScreen";
 import { RootStackParamList } from "@/interface/Layout";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "./screens/Main/HomeScreen";
-import ItemScreen from "./screens/Main/ItemScreen";
+import HomeScreen from "@/app/screens/Main/HomeScreen";
+import ItemScreen from "@/app/screens/Main/ItemScreen";
 import { BlurView } from "expo-blur";
 import { navigationRef } from "@/interface/Layout";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Cart from "@/components/Cart";
-import OrdersScreen from "./screens/Main/OrdersScreen";
-import SavedScreen from "./screens/Main/SavedScreen";
+import OrdersScreen from "@/app/screens/Main/OrdersScreen";
+import SavedScreen from "@/app/screens/Main/SavedScreen";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -41,8 +41,8 @@ const Tabs = createBottomTabNavigator();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
-    Inter: require("../assets/fonts/Inter-VariableFont.ttf"),
+    SpaceMono: require("@/assets/fonts/SpaceMono-Regular.ttf"),
+    Inter: require("@/assets/fonts/Inter-VariableFont.ttf"),
   });
 
   useEffect(() => {
