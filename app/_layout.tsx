@@ -1,5 +1,5 @@
 import "react-native-gesture-handler";
-import "./globals.css";
+import "../globals.css";
 import {
   NavigationContainer,
   NavigationIndependentTree,

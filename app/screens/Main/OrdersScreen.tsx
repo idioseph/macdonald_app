@@ -146,6 +146,15 @@ const OrdersScreen = () => {
       <View className="px-4 pt-4">
         <Text className="text-2xl font-[Inter] font-semibold mb-5">Your Orders</Text>
       </View>
+
+      <View className="bg-white px-4 py-4 border-t border-[#F1F1F1]">
+        <View className="flex-row justify-between items-center">
+          <Text className="text-lg font-[Inter] font-medium">Total:</Text>
+          <Text className="text-lg font-[Inter] font-semibold">
+            £{total.toFixed(2)}
+          </Text>
+        </View>
+      </View>
       
       <Animated.ScrollView 
         className="flex-1 px-4 pt-5"
